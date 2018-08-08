@@ -1,0 +1,33 @@
+<!-- Main Form Start -->
+<div class="container">
+  <form [formGroup]="adminForm" (ngSubmit)="onSubmit(adminForm)">
+    <div class="form-group input-group">
+      <label class="has-float-label">
+        <span>Name</span>
+        <input class="form-control" type="text" formControlName="name" placeholder="Name"/>
+      </label>
+    </div>
+    <div class="form-group input-group">
+      <label class="has-float-label">
+        <span>Address</span>
+        <input class="form-control" type="text" formControlName="address" placeholder="Address"/>
+      </label>
+    </div>
+    <div class="form-group input-group">
+      <label class="has-float-label">
+        <span>Rates</span>
+        <input class="form-control" type="number" formControlName="rates" placeholder="Rates"/>
+      </label>
+    </div>
+    <div class="form-group input-group">
+      <label class="has-float-label">
+        <span>Description</span>
+        <input class="form-control" type="text" formControlName="description" placeholder="Description"/>
+      </label>
+    </div>
+
+    <div class="form-group d-flex pt-5 pb-2">
+      <button class="btn btn-block my-1 btn-primary" type="submit">Add</button>
+    </div>
+  </form>
+</div>
